@@ -6,19 +6,30 @@
     
 }.form_container{
     width: 100%;
-    height: 100vh;
-    background: #ac9898;
+    background-image: url("https://global.toyota/pages/models/images/vitz/rendition/vitz_003_W610_H407.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: brightness(50%); */
+    /* font-family: 'Inter', sans-serif; */
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-family: 'Inter', sans-serif;
-
-}.form_label{
-  font-size: 24px;
+    justify-content: center;
 }
-
+.form{
+    background-color: #c8c3c36b;
+    /* margin-top: 5%; */
+}
+.h1_div{
+    padding-top: 120px;  
+    text-align: center;    
+}
+.form_label{
+   font-size: 24px;
+   font-weight: 550;
+   color: #262525;
+}
 .form_input{  
-    padding: 15px;		
+    padding: 12px;		
 	border: 1px solid #e8e4e4;
     border-radius: 10px;
     background-color: #ffffff;
@@ -26,16 +37,21 @@
 	width: 100%;
 	box-sizing: border-box;
     margin-bottom: 15px;
-
-}.form_input::placeholder {
-    color: #7989A1;
-    font-size: 18px;
+}
+.form_input::placeholder {
+    color: #7989A1 !important;
+    font-size: 18px !important;
     /* padding-left: 3px; */
+}
+.form_input[type="date" i]{
+    color: #7989A1 !important;
+    font-size: 18px !important;
 }
 .button_div{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10% ;
 }
 .submit_button{
     padding: 8px 30px 8px 30px;
@@ -45,12 +61,35 @@
     color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255); 
     cursor: pointer;
-
 }
 .submit_button:hover{
-   
     background-color: rgb(255, 255, 255);
     color: #000000;
     font-weight: 700;
     border: 2px solid #000000; 
 }
+
+@media screen and (max-width: 415px){  
+.form{
+   padding: 10%;
+}
+.form_label{
+    font-size: 18px;
+ }
+.h1_div{
+    padding-top: 50px;
+}
+h1{
+    font-size: 24px;
+}
+.form_input{  
+    padding: 10px;	
+}
+.form_input::placeholder{
+    font-size: 14px !important;
+}
+input[type="date" i]{
+    font-size: 14px !important;
+}
+}
+

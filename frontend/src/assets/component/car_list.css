@@ -1,0 +1,50 @@
+/* styles.css */
+.list_container{
+    padding: 10px;
+    margin: 10px;
+}
+input{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-color: antiquewhite;
+}
+
+.table-container {
+  border: 1px solid rgb(179, 141, 141);;
+  overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+  background-color: rgb(239, 184, 184);
+}
+
+.table-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid rgb(180, 136, 136);;
+  padding: 8px;
+}
+.table-container th{
+    background-color: rgba(250, 248, 248, 0.342);
+}
+
+
+@media (max-width: 600px) {
+.list_container{
+    padding: 0px;
+    margin: 0px;
+}
+.input_search{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.table-container table {
+    font-size: 12px; /* Decrease font size for smaller screens */
+}
+.table-container th,
+.table-container td {
+    padding: 6px; /* Reduce padding for smaller screens */
+  }
+}
