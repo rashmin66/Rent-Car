@@ -11,9 +11,9 @@ input{
 }
 
 .table-container {
-  border: 1px solid rgb(179, 141, 141);;
+  border: 1px solid rgba(255, 255, 255, 0.954);;
   overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
-  background-color: rgb(239, 184, 184);
+  background-color: rgba(144, 140, 140, 0.569);
 }
 
 .table-container table {
@@ -23,15 +23,15 @@ input{
 
 .table-container th,
 .table-container td {
-  border: 1px solid rgb(180, 136, 136);;
+  border: 1px solid rgba(255, 255, 255, 0.411);
   padding: 8px;
 }
 .table-container th{
-    background-color: rgba(250, 248, 248, 0.342);
+    background-color: rgba(19, 19, 19, 0.342);
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 415px) {
 .list_container{
     padding: 0px;
     margin: 0px;
@@ -45,6 +45,6 @@ input{
 }
 .table-container th,
 .table-container td {
-    padding: 6px; /* Reduce padding for smaller screens */
+    padding: 0px; /* Reduce padding for smaller screens */
   }
 }

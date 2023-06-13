@@ -45,11 +45,8 @@ try {
 
   return (
     <>
-    <div className='navbar'></div> {/* navbar */}
-
      <div className='form_container'>{/* form container */}
   
-
      <form ref={formRef} className='form' onSubmit={onSubmited}> {/* form start */}
        
               <div className='h1_div'> <h1>Rent a Car</h1></div>

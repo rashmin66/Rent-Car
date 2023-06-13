@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from 'react';
-import './car_list.css'
-
+import './car_list.css';
 
 function CarList() {
  const [cardata, setdata] = useState(null)
@@ -66,7 +65,8 @@ return (
 
        return <tr key={index}>
       <td>{item.numberPlate}</td> 
-      <td>{item.date}</td>
+      {/* <td>{item.date}</td> */}
+      <td>{item.date.slice(0, 10)}</td>
       <td>{item.customerId}</td> 
       <td>{item.name}</td> 
       <td>{item.carModel}</td> 
