@@ -8,7 +8,7 @@ function CarList() {
  const [searchDate, setSearchDate] = useState('')
  function GetCars() {
 
- axios.get("http://localhost:8000/getdata")
+ axios.get("https://pink-tender-pigeon.cyclic.app/getdata")
     .then((response) => {
       console.log(response.data);
       setdata(response.data)

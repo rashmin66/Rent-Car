@@ -23,7 +23,7 @@ function App() {
     let Milage = document.getElementById("Milage").value;
     
 try {
-    axios.post("http://localhost:8000/postdata", {
+  axios.post("https://pink-tender-pigeon.cyclic.app/postdata",{
     NumberPlate: NumberPlate,
     date: date,
     CustomerId: CustomerId,
