@@ -47,6 +47,6 @@ input{
 .table-container td {
     padding: 0px; /* Reduce padding for smaller screens */
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 3% !important;
   }
 }
